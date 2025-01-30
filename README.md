@@ -7,13 +7,15 @@ GraphQL Foundation. To use this template you should:
 - remove this front-matter
 - customize the text in this README
 - fill out `(NAME)` in [notes/README.md](notes/README.md)
-- update the [initial agenda](./agendas/2022/2022-XX-XX.md)
-- once your initial meeting is scheduled:
-  - rename the initial agenda into `YYYY-MM-DD.md` format
-  - have operations schedule the meeting, and update the password in the agenda
-  - fix other instances of `TBD` in the agenda
-  - create a blank Google document with the same title as the agenda, make it
-    publicly editable, and link it under "Live Notes"
+- fill out `wg.config.js` with details about the WG's schedule
+  - `name` / `repoUrl` - update with the name and URL of your WG
+  - `videoConferenceDetails`: ask @Benjie to generate a new series of (recorded) Zoom meetings, then update the URL and password (do NOT change the spacing, it will break the markdown)
+  - `liveNotesUrl`: create a blank Google document with the same title as the
+    WG, make it publicly editable, copy instructions from the main GraphQL WG
+    live notes
+  - `nth`, `weekday`, `time` - when will your WG be? (e.g. 4th Thursday at 10:30am-12am would be `nth: 4, weekday: "Th", time: "10:30-12:00"`)
+- generate your first month's agenda `yarn && yarn gen-agenda YYYY MM` (replacing YYYY MM with the meeting's year and month, e.g. `2025 01`)
+- let @Benjie know the first meeting is scheduled and ask for the GraphQL Foundation calendar to be updated
 
 In this README, items that need replacing are ALLCAPS and surrounded by
 parenthesis. We've attempted to make as much of the text as possible generic so

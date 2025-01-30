@@ -2,10 +2,10 @@
 
 /** @type {import('wgutils').Config} */
 const config = {
-  name: "GraphQL WG",
-  repoUrl: "https://github.com/graphql/graphql-wg",
-  videoConferenceDetails: `https://zoom.us/j/593263740
-  - _Password:_ graphqlwg`,
+  name: "NAME OF WG",
+  repoUrl: "https://github.com/graphql/...",
+  videoConferenceDetails: `https://zoom.us/j/...
+  - _Password:_ ...`,
   liveNotesUrl: "https://docs.google.com/document/d/...",
   timezone: "US/Pacific",
   frequency: "monthly",
