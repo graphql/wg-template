@@ -16,6 +16,9 @@ GraphQL Foundation. To use this template you should:
   - `nth`, `weekday`, `time` - when will your WG be? (e.g. 4th Thursday at 10:30am-12am would be `nth: 4, weekday: "Th", time: "10:30-12:00"`)
 - generate your first month's agenda `yarn && yarn gen-agenda YYYY MM` (replacing YYYY MM with the meeting's year and month, e.g. `2025 01`)
 - let @Benjie know the first meeting is scheduled and ask for the GraphQL Foundation calendar to be updated
+- (optional) ask @Benjie or a TSC member to enable agenda auto-merge:
+  - set up branch protections on `main`, specifically requiring `EasyCLA` to pass (may require a PR to be raised to trigger EasyCLA the first time?)
+  - uncomment the block at the top of `.github/workflows/wgutils-automerge.yml`
 
 In this README, items that need replacing are ALLCAPS and surrounded by
 parenthesis. We've attempted to make as much of the text as possible generic so
