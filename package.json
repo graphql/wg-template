@@ -14,5 +14,8 @@
   "prettier": {
     "proseWrap": "always",
     "trailingComma": "none"
+  },
+  "dependencies": {
+    "wgutils": "^1.2.4"
   }
 }
